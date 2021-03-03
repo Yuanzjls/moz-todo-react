@@ -11,7 +11,7 @@ function App(props) {
       <button type="submit" className="btn btn__primary btn__lg">Add</button>
       </form>  
       <div className="filters btn-group stack-exception">
-        <button type="filters toggle-btn" aria-pressed="true">
+        <button type="button" className="btn toggle-btn" aria-pressed="true">
           <span className="visually-hidden">Show</span>
           <span> all </span>
           <span className="visually-hidden">tasks</span>
@@ -20,6 +20,9 @@ function App(props) {
           <span className="visually-hidden">Show</span>
           <span> Completed</span>
           <span className="visually-hidden"> tasks</span></button>
+          <button type="button" className="btn toggle-btn" aria-pressed="false"><span className="visually-hidden">Show</span>
+          <span> Completed </span>
+          <span className="visually-hidden">tasks</span></button>
       </div>
       <h2 id="list-heading">3 tasks remaining</h2>
       <ul role="list" className="todo-list stack-large stack-exception" aria-labelledby='list-heading'>
