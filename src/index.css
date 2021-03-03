@@ -30,7 +30,7 @@ button{
   font: inherit;
   line-height: normal;
   -webkit-font-smoothing: inherit;
-  -moz-osx-font-smooting: inherit;
+  -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
 }
 button::-moz-focus-inner{
@@ -42,7 +42,7 @@ optgroup,
 select,
 textarea{
   font-family: inherit;
-  font-size: 1000%;
+  font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
@@ -210,6 +210,9 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
 }
+.todo > * {
+  flex: 0 0 100%;
+}
 .todo-text{
   width: 100%;
   min-height: 4.4rem;
@@ -259,6 +262,7 @@ body{
   cursor: pointer;
   touch-action: manipulation;
 }
+
 .c-cb > label::before{
   content: "";
   position: absolute;
